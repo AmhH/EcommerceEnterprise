@@ -57,7 +57,7 @@ public class User {
 	private List<Order> orders = new ArrayList<Order>();
 	
 	@OneToOne(fetch=FetchType.LAZY,  cascade = CascadeType.PERSIST) 
-	@JoinColumn(name="card_id") 
+	@JoinColumn(name="cart_id") 
 	private Cart cart;
 
 	public User() {

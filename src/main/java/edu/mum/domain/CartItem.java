@@ -24,7 +24,7 @@ public class CartItem {
 	private Cart cart;
 	
 	@OneToOne(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
-	@JoinColumn(name = "itemId")
+	@JoinColumn(name = "productId")
 	private Product product;
 
 	public CartItem() {

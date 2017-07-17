@@ -32,6 +32,7 @@ public class UserDaoImpl extends GenericDaoImpl<User> implements UserDao {
 
 	}
 
+	@SuppressWarnings("rawtypes")
 	public List<User> findByGraph() {
 
 	    EntityGraph graph = entityManager.getEntityGraph("graph.User.addresses");

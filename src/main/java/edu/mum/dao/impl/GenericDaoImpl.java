@@ -8,8 +8,8 @@ import javax.persistence.PersistenceContext;
 import edu.mum.dao.GenericDao;
 
 
-/*@SuppressWarnings("unchecked")
-@Repository*/
+@SuppressWarnings("unchecked")
+//@Repository
 public abstract class GenericDaoImpl<T> implements GenericDao<T> {
 
 	@PersistenceContext
@@ -46,7 +46,6 @@ public abstract class GenericDaoImpl<T> implements GenericDao<T> {
 	    return (T) entityManager.find( daoType, id );
 	 }
 	
-	@SuppressWarnings("unchecked")
 	@Override
 	public List<T> findAll(){
 		      return entityManager.createQuery( "from " + daoType.getName() )
@@ -58,7 +57,6 @@ public abstract class GenericDaoImpl<T> implements GenericDao<T> {
 	      return entityManager.merge( entity );
 	   }
 
- 	@SuppressWarnings("unchecked")
 	@Override
 	public List<T> findAll(String s,Object  hint ){
  	    return (List<T>)  entityManager.createQuery("SELECT m FROM Member AS m") 

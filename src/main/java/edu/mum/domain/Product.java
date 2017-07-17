@@ -36,11 +36,11 @@ public class Product implements Serializable {
 	private String description;
 	
 //    @EmptyOrSize(min = 2, max = 10, message = "{EmptyOrSize}")
-	private String itemId;
+	private String productId;
 //    @Min(value=5)
 	private float price;
     @Transient
-    private MultipartFile itemImage;
+    private MultipartFile productImage;
 
 	@ManyToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name = "category_ID")
@@ -70,12 +70,12 @@ public class Product implements Serializable {
 		this.description = description;
 	}
 
-	public String getItemId() {
-		return itemId;
+	public String getProductId() {
+		return productId;
 	}
 
-	public void setItemId(String itemId) {
-		this.itemId = itemId;
+	public void setProductId(String productId) {
+		this.productId = productId;
 	}
 
 	public float getPrice() {
@@ -92,10 +92,10 @@ public class Product implements Serializable {
 	public void setCategory(Category category) {
 		this.category = category;
 	}
-	public MultipartFile getItemImage() {
-		return itemImage;
+	public MultipartFile getProductImage() {
+		return productImage;
 	}
-	public void setItemImage(MultipartFile itemImage) {
-		this.itemImage = itemImage;
+	public void setproductImage(MultipartFile productImage) {
+		this.productImage = productImage;
 	}
 }
