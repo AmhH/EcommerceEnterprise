@@ -34,11 +34,11 @@ public class Cart {
 		
 	}
 	
-	public Long getCartName() {
+	public Long getCartId() {
 		return cartId;
 	}
 
-	public void setCartName(Long cartId) {
+	public void setCartId(Long cartId) {
 		this.cartId = cartId;
 	}
 	

@@ -36,17 +36,17 @@ public class Order implements Serializable {
 	private List<OrderItem> items = new ArrayList<OrderItem>();
 
 	@OneToOne
-	private OrderPayment payments;
+	private OrderPayment payment;
 	
 	public Order(String orderNumber, List<OrderItem> items, OrderPayment payments) {
 
 		this.orderNumber = orderNumber;
 		this.items = items;
-		this.payments = payments;
+		this.payment = payments;
 	}
 
-	public void setPayments(OrderPayment payments) {
-		this.payments = payments;
+	public void setPayments(OrderPayment payment) {
+		this.payment = payment;
 	}
 
 	public Long getId() {

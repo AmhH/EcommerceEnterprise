@@ -11,6 +11,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 import edu.mum.validation.EmptyOrSize;
 
 @Entity
@@ -23,9 +25,9 @@ public class Category {
 	@EmptyOrSize(min = 1, max = 50, message = "{EmptyOrSize}")
 	String name;
 	
+	@NotEmpty
 	String description;
 
-	// If using a List INSTEAD of a SET - less efficient
 	@OneToMany(mappedBy = "category", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval=true)
 	Set<Product> products = new HashSet<Product>();
 

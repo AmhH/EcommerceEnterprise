@@ -18,7 +18,7 @@ public class OrderItem {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id", updatable = false, nullable = false)
 	private Long id = null;
-	
+
 	@Version
 	@Column(name = "version")
 	private int version = 0;
@@ -26,22 +26,22 @@ public class OrderItem {
 	@Column
 	private int quantity;
 
-	public OrderItem() {
-		
-	}
-	
-	public OrderItem(int quantity, Product product) {
-		super();
-		this.quantity = quantity;
-		this.product = product;
-	}
-
 	@ManyToOne
 	private Order order;
 
 	@OneToOne(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
 	@JoinColumn(name = "orderItemId")
 	private Product product;
+
+	public OrderItem() {
+
+	}
+
+	public OrderItem(int quantity, Product product) {
+		super();
+		this.quantity = quantity;
+		this.product = product;
+	}
 
 	public Long getId() {
 		return id;

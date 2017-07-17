@@ -11,6 +11,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Transient;
 
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.web.multipart.MultipartFile;
 
 @Entity
@@ -21,16 +22,10 @@ public class Product implements Serializable {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
-//	@NotEmpty
+	@NotEmpty
 	private String name;
 	
     public Product() {
-	}
-    
-	public Product(String name, String description, float price) {
-		this.name = name;
-		this.description = description;
-		this.price = price;
 	}
 
 	private String description;
@@ -45,6 +40,12 @@ public class Product implements Serializable {
 	@ManyToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name = "category_ID")
     private Category category;
+	
+	public Product(String name, String description, float price) {
+		this.name = name;
+		this.description = description;
+		this.price = price;
+	}
 
 	public Long getId() {
 		return id;
