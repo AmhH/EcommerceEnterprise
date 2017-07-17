@@ -13,11 +13,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
-import javax.persistence.Table;
 import javax.persistence.Version;
 
 @Entity
-@Table(name = "purchaseOrder")
 public class Order implements Serializable {
 	
 	private static final long serialVersionUID = 5784L;
@@ -34,18 +32,18 @@ public class Order implements Serializable {
 	@Column
 	private String orderNumber;
 
+	@OneToMany(mappedBy = "order", fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE })
+	private List<OrderItem> items = new ArrayList<OrderItem>();
+
+	@OneToOne
+	private OrderPayment payments;
+	
 	public Order(String orderNumber, List<OrderItem> items, OrderPayment payments) {
 
 		this.orderNumber = orderNumber;
 		this.items = items;
 		this.payments = payments;
 	}
-
-	@OneToMany(mappedBy = "order", fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE })
-	private List<OrderItem> items = new ArrayList<OrderItem>();
-
-	@OneToOne
-	private OrderPayment payments;
 
 	public void setPayments(OrderPayment payments) {
 		this.payments = payments;

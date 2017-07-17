@@ -1,8 +1,5 @@
 package edu.mum.dao.impl;
 
-import java.util.List;
-
-import javax.persistence.EntityGraph;
 import javax.persistence.Query;
 
 import org.springframework.stereotype.Repository;
@@ -10,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import edu.mum.dao.UserDao;
 import edu.mum.domain.User;
 
-@SuppressWarnings("unchecked")
+//@SuppressWarnings("unchecked")
 @Repository
 public class UserDaoImpl extends GenericDaoImpl<User> implements UserDao {
 
@@ -26,7 +23,7 @@ public class UserDaoImpl extends GenericDaoImpl<User> implements UserDao {
 
 	}
 
-	public List<User> findAllJoinFetch() {
+	/*public List<User> findAllJoinFetch() {
 		  Query query =  entityManager.createQuery("SELECT DISTINCT m FROM User AS m JOIN FETCH m.addresses AS a");
 		  return (List<User>) query.getResultList();
 
@@ -40,5 +37,5 @@ public class UserDaoImpl extends GenericDaoImpl<User> implements UserDao {
 	    return (List<User>) this.findAll("javax.persistence.fetchgraph",graph);
  
 	}
-
+*/
  }
