@@ -2,16 +2,15 @@ package org.abyssinia.persistance.service.Impl;
 
 import java.util.List;
 
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.IconifyAction;
-
 import org.abyssinia.persistance.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+import org.springframework.transaction.annotation.Transactional;
 import org.abyssinia.dao.CategoryDao;
 import org.abyssinia.domain.Category;
 
 @Service
+@Transactional
 public class CategoryServiceImpl implements CategoryService{
 	
 	@Autowired

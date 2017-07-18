@@ -2,16 +2,15 @@ package org.abyssinia.persistance.service.Impl;
 
 import java.util.List;
 
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.IconifyAction;
-
 import org.abyssinia.persistance.service.OrderItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+import org.springframework.transaction.annotation.Transactional;
 import org.abyssinia.dao.OrderItemDao;
 import org.abyssinia.domain.OrderItem;
 
 @Service
+@Transactional
 public class OrderItemServiceImpl implements OrderItemService{
 	
 	@Autowired

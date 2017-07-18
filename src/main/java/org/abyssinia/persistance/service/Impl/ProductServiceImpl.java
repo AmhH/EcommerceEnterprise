@@ -2,16 +2,15 @@ package org.abyssinia.persistance.service.Impl;
 
 import java.util.List;
 
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.IconifyAction;
-
 import org.abyssinia.persistance.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+import org.springframework.transaction.annotation.Transactional;
 import org.abyssinia.dao.ProductDao;
 import org.abyssinia.domain.Product;
 
 @Service
+@Transactional
 public class ProductServiceImpl implements ProductService{
 	
 	@Autowired
