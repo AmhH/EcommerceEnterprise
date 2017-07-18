@@ -12,7 +12,7 @@
  	 	<mvc:message-converters>
 		    <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
 		        <property name="objectMapper">
-		            <bean class="org.abyssinia.persitance.rest.HibernateAwareObjectMapper" />
+		            <bean class="org.abyssinia.persistance.rest.HibernateAwareObjectMapper" />
 		        </property>
 		    </bean>
 		</mvc:message-converters>
