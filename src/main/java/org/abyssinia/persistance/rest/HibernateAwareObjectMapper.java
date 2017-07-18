@@ -1,4 +1,4 @@
-package org.abyssinia.persitance.rest;
+package org.abyssinia.persistance.rest;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

@@ -1,9 +1,9 @@
-package org.abyssinia.persitance.controllers;
+package org.abyssinia.persistance.controllers;
 
 import java.util.List;
 
 import org.abyssinia.persistance.service.ProductService;
-import org.abyssinia.persitance.util.UrlList;
+import org.abyssinia.persistance.util.UrlList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PathVariable;

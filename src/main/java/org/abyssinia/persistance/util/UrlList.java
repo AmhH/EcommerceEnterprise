@@ -1,4 +1,4 @@
-package org.abyssinia.persitance.util;
+package org.abyssinia.persistance.util;
 
 public class UrlList {
 	public static final String PRODUCT = "/product";
