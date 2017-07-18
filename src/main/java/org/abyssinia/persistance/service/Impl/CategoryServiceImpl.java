@@ -8,8 +8,8 @@ import org.abyssinia.persistance.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import edu.mum.dao.CategoryDao;
-import edu.mum.domain.Category;
+import org.abyssinia.dao.CategoryDao;
+import org.abyssinia.domain.Category;
 
 @Service
 public class CategoryServiceImpl implements CategoryService{

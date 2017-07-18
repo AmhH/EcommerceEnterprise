@@ -8,8 +8,8 @@ import org.abyssinia.persistance.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import edu.mum.dao.UserDao;
-import edu.mum.domain.User;
+import org.abyssinia.dao.UserDao;
+import org.abyssinia.domain.User;
 
 @Service
 public class UserServiceImpl implements UserService{

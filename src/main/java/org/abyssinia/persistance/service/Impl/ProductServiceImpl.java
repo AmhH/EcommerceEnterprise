@@ -8,8 +8,8 @@ import org.abyssinia.persistance.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import edu.mum.dao.ProductDao;
-import edu.mum.domain.Product;
+import org.abyssinia.dao.ProductDao;
+import org.abyssinia.domain.Product;
 
 @Service
 public class ProductServiceImpl implements ProductService{

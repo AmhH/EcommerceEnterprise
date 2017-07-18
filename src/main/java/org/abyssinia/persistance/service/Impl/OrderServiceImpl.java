@@ -8,8 +8,8 @@ import org.abyssinia.persistance.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import edu.mum.dao.OrderDao;
-import edu.mum.domain.Order;
+import org.abyssinia.dao.OrderDao;
+import org.abyssinia.domain.Order;
 
 @Service
 public class OrderServiceImpl implements OrderService{

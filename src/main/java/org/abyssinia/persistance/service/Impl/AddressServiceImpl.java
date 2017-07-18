@@ -6,8 +6,9 @@ import org.abyssinia.persistance.service.AddressService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import edu.mum.dao.AddressDao;
-import edu.mum.domain.Address;
+import org.abyssinia.dao.AddressDao;
+
+import org.abyssinia.domain.Address;
 
 @Service
 public class AddressServiceImpl implements AddressService {

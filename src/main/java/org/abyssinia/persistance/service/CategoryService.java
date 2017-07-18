@@ -2,7 +2,7 @@ package org.abyssinia.persistance.service;
 
 import java.util.List;
 
-import edu.mum.domain.Category;
+import org.abyssinia.domain.Category;
 
 public interface CategoryService {
 	public void save( Category category);

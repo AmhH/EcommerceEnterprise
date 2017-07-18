@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
-import edu.mum.domain.Product;
+import org.abyssinia.domain.Product;
 @RestController
 @RequestMapping(value = UrlList.PRODUCT)
 public class ProductRestController {

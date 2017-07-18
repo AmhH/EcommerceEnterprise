@@ -2,8 +2,8 @@ package org.abyssinia.persistance.service;
 
 import java.util.List;
 
-import edu.mum.domain.Address;
-import edu.mum.domain.UserCredentials;
+
+import org.abyssinia.domain.UserCredentials;
 
 public interface UserCredentialService {
 	public void save( UserCredentials userCredentials);

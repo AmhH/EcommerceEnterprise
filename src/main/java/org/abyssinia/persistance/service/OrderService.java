@@ -2,7 +2,7 @@ package org.abyssinia.persistance.service;
 
 import java.util.List;
 
-import edu.mum.domain.Order;
+import org.abyssinia.domain.Order;
 
 public interface OrderService {
 	public void save(Order order);

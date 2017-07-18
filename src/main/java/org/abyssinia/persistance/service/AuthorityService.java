@@ -2,7 +2,7 @@ package org.abyssinia.persistance.service;
 
 import java.util.List;
 
-import edu.mum.domain.Authority;
+import org.abyssinia.domain.Authority;
 
 public interface AuthorityService {
 	public void save( Authority authority);

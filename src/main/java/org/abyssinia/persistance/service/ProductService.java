@@ -2,7 +2,7 @@ package org.abyssinia.persistance.service;
 
 import java.util.List;
 
-import edu.mum.domain.Product;
+import org.abyssinia.domain.Product;
 
 public interface ProductService {
 	public void save(Product product);

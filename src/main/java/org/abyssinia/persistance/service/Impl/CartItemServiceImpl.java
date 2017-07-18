@@ -8,8 +8,8 @@ import org.abyssinia.persistance.service.CartItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import edu.mum.dao.CartItemDao;
-import edu.mum.domain.CartItem;
+import org.abyssinia.dao.CartItemDao;
+import org.abyssinia.domain.CartItem;
 
 @Service
 public class CartItemServiceImpl implements CartItemService{

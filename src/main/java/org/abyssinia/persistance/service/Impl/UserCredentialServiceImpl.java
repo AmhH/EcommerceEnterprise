@@ -8,8 +8,8 @@ import org.abyssinia.persistance.service.UserCredentialService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import edu.mum.dao.CredentialsDao;
-import edu.mum.domain.UserCredentials;
+import org.abyssinia.dao.CredentialsDao;
+import org.abyssinia.domain.UserCredentials;
 
 @Service
 public class UserCredentialServiceImpl implements UserCredentialService{

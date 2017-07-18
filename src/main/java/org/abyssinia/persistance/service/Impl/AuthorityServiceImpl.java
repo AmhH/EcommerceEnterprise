@@ -6,8 +6,8 @@ import org.abyssinia.persistance.service.AuthorityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import edu.mum.dao.AuthorityDao;
-import edu.mum.domain.Authority;
+import org.abyssinia.dao.AuthorityDao;
+import org.abyssinia.domain.Authority;
 
 @Service
 public class AuthorityServiceImpl implements AuthorityService{

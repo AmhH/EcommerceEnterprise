@@ -2,7 +2,7 @@ package org.abyssinia.persistance.service;
 
 import java.util.List;
 
-import edu.mum.domain.Address;
+import org.abyssinia.domain.Address;
 
 public interface AddressService {
 	public void save( Address address);
