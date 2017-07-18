@@ -2,7 +2,6 @@ package org.abyssinia;
 
 import java.util.List;
 
-import org.abyssinia.dao.AddressDao;
 import org.abyssinia.domain.Address;
 import org.abyssinia.persistance.service.AddressService;
 import org.springframework.context.ApplicationContext;
@@ -11,6 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(
